@@ -300,7 +300,8 @@ body
             padding: 5px 20px;
             background-color: #ccc;
             border-radius: 30px;
-            width: 50%;
+            width: 40%;
+            min-width: fit-content;
 }
 .wait > i{
       animation-name: rotate;
