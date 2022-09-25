@@ -84,10 +84,12 @@ body
 .sidebar{
       width: 300px;
       box-shadow: 0 0 10px #000;
+      position: fixed;
 }
 
 .sidebar h3{
       margin-bottom: 50px;
+      margin-left: 50%;
 }
 .sidebar h3::before{
       content: '';

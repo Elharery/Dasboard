@@ -1,12 +1,14 @@
 @media (max-width:767px) {
     .sidebar {
-        width: 65px;
+        width: 80px;
+        /* 65 */
         padding: 10px;
     }
 
     .sidebar h3 {
         font-size: 13px;
         margin-bottom: 15px;
+        margin-left: 0;
     }
 
     .sidebar h3::before,
