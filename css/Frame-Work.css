@@ -11,6 +11,9 @@
 .text-align {
     text-align: center;
 }
+.txt-tr{
+    text-transform: capitalize;
+}
 /* .sidebar h3 span{
     color:var(--blue-alt-color);
 } */
