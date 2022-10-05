@@ -722,6 +722,12 @@ position: absolute;
       }
 }
 
+@media (min-width: 375px) {
+      .social .one-1,
+      .social .one-3,
+      .social .one-4{
+            display: block;
+      }}
 @media (max-width: 320px) {
       .social .one-1,
       .social .one-3,
