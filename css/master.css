@@ -725,6 +725,16 @@ position: absolute;
 .settings-page{
       grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
+@media (max-width: 320px){
+      .settings-page .ana .info > h2{
+            width: 120px;
+      }
+}
+@media (min-width: 321px) and (max-width: 375px){
+      .settings-page .ana .info > h2{
+            width: 185px;
+      }
+}
 @media (max-width: 767px){
       .settings-page{
             grid-template-columns:  minmax(100px, 1fr);
