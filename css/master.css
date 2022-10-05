@@ -725,6 +725,22 @@ position: absolute;
 .settings-page{
       grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
+textarea:focus::placeholder{
+      opacity: 0;
+}
+textarea:focus{
+      outline: 1px solid var(--blue-color);
+}
+.settings-page .close-message{
+      border: 1px solid #ccc;
+      resize: none;
+      min-height: 150px;
+}
+/* boxes */ 
+                                                            /* Media  */
+.content{
+      overflow: hidden;
+}
 @media (max-width: 320px){
       .settings-page .ana .info > h2{
             width: 120px;
@@ -742,15 +758,6 @@ position: absolute;
             margin-right: 10px;
       }
 }
-.settings-page .close-message{
-      border: 1px solid #ccc;
-      resize: none;
-      min-height: 150px;
-}
-/* boxes */
-.content{
-      overflow: hidden;
-}
 @media (min-width: 1024px){
       .tickets .boxes{
                   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
@@ -765,10 +772,10 @@ position: absolute;
       .boxes {
             display: flex;
             flex-direction: column;
-                  /* grid-template-columns: repeat(2, 130px); */
-                  /* margin-left: -15px; */
-            }
-
+            /* grid-template-columns: repeat(2, 130px); */
+            /* margin-left: -15px; */
+      }
+      
 }
 @media (min-width: 768px) and (max-width: 992px){
       .boxes{
