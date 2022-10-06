@@ -736,18 +736,43 @@ textarea:focus{
       resize: none;
       min-height: 150px;
 }
+input{
+      border: 1px solid #ccc;
+}
+input[placeholder="first name"]:focus,
+input[placeholder="last name"]:focus{
+            border: 1px solid var(--blue-color);
+}
+input[placeholder="first name"],
+input[placeholder="last name"]{
+      margin-bottom: 10px;
+}
+input[value="o@mn.sa"]{
+      background-color: #ddd;
+      color: gray;
+}
+input:focus{
+            outline: 1px solid #eee;
+}
 /* boxes */ 
                                                             /* Media  */
 .content{
       overflow: hidden;
 }
+@media (max-width: 425px){
+      .wid-2 span{
+            padding-left: 0;
+            position: relative;
+            top: 10px;
+      }
+}
 @media (max-width: 320px){
-      .settings-page .ana .info > h2{
+      .settings-page .box-1 .info > h2{
             width: 120px;
       }
 }
 @media (min-width: 321px) and (max-width: 375px){
-      .settings-page .ana .info > h2{
+      .settings-page .box-1 .info > h2{
             width: 175px;
       }
 }
