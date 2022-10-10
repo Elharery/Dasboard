@@ -665,10 +665,26 @@ position: absolute;
       margin-left: -20px;
 }
 /* Start Settings */
+
 /* Zor */
+
+input[type="checkbox"]{
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+}
 .toggle-checkbox{
       appearance: none;
       -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+}
+.toggle-checkbox{
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
 }
 .toggle-switch{
       background-color: #ccc;
