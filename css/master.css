@@ -754,6 +754,12 @@ input[value="o@mn.sa"]{
 input:focus{
             outline: 1px solid #eee;
 }
+/*  */
+.wid-3 .box-1:not(:last-of-type),
+.wid-3 .box-2:not(:last-of-type),
+.wid-3 .box-3:not(:last-of-type){
+      border-bottom: 1px solid #ddd;
+}
 /* boxes */ 
                                                             /* Media  */
 .content{
@@ -770,6 +776,18 @@ input:focus{
       .settings-page .box-1 .info > h2{
             width: 120px;
       }
+      
+}
+@media (max-width: 375px){
+            .wid-3 .box-1,
+                  .wid-3 .box-2,
+                  .wid-3 .box-3 {
+                        display: block;
+                  }
+            
+                  .wid-3 .btn {
+                        padding-bottom: 10px;
+                  }
 }
 @media (min-width: 321px) and (max-width: 375px){
       .settings-page .box-1 .info > h2{
