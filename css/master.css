@@ -673,12 +673,14 @@ input[type="checkbox"]{
       -webkit-appearance: none;
       -moz-appearance: none;
       -o-appearance: none;
+      display: none;
 }
 .toggle-checkbox{
       appearance: none;
       -webkit-appearance: none;
       -moz-appearance: none;
       -o-appearance: none;
+      display: none;
 }
 .toggle-checkbox{
       appearance: none;
