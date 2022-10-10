@@ -766,6 +766,7 @@ input[placeholder="last name"]{
 input[value="o@mn.sa"]{
       background-color: #ddd;
       color: gray;
+      cursor: not-allowed;
 }
 input:focus{
             outline: 1px solid #eee;
