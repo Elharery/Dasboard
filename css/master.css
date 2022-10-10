@@ -778,7 +778,8 @@ input:focus{
       }
       
 }
-@media (max-width: 375px){
+@media (max-width: 375px){}
+@media (max-width: 425px){
             .wid-3 .box-1,
                   .wid-3 .box-2,
                   .wid-3 .box-3 {
