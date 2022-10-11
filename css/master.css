@@ -789,6 +789,8 @@ input[value="o@mn.sa"]{
       -o-border-radius: 4px;
 }
 .wid-4 i{
+      border: 1px solid #ddd;
+            border-right: transparent;
       color: var(--gray-color);
       width: 40px;
       height: 40px;
