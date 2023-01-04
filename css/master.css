@@ -75,11 +75,44 @@ body
 }
 /* End Media */
 /* rule code */
-/* Start New */
-      .page{
-            min-height: 100vh;
-            background-color: #f1f5f9;
+/* profile */
+/* .img-profile:hover{
+      background-color: #eee;
+      padding: 7px;
+      transition: .3s;
+} */
+/* End profile */
+/* bell  */
+.rotate-bell:hover{
+      animation-play-state: paused;
+}
+.rotate-bell{
+      animation-name: rotate-bell;
+      animation-timing-function: linear;
+      animation-duration: .3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+@keyframes rotate-bell{
+      0%{
+            transform: rotate(-15deg);
       }
+      25%{
+            transform: rotate(0deg);
+      }
+      50%{
+            transform: rotate(15deg);
+      }
+      100%{
+            transform: rotate(0deg);
+      }
+}
+/* End bell  */
+/* Start New */
+.page{
+      min-height: 100vh;
+      background-color: #f1f5f9;
+}
 /* End New */
 /* Start side */
 .sidebar{
