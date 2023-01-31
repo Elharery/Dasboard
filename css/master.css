@@ -90,7 +90,6 @@ body
       animation-name: rotate-bell;
       animation-timing-function: linear;
       animation-duration: .3s;
-      animation-iteration-count: 3;
       animation-direction: alternate;
 }
 @keyframes rotate-bell{
@@ -98,7 +97,8 @@ body
             transform: rotate(-15deg);
       }
       25%{
-            transform: rotate(0deg);
+            transform: rotate(0deg);}}
+/* <<<<<<< HEAD
       }
       50%{
             transform: rotate(15deg);
@@ -106,7 +106,16 @@ body
       100%{
             transform: rotate(0deg);
       }
-}
+=======
+      }
+      50%{
+            transform: rotate(15deg);
+      }
+      100%{
+            transform: rotate(0deg);
+      }
+>>>>>>> 22254328348d87787ff1b34e325416fd8b8fd08a
+} */
 /* End bell  */
 /* Start New */
 .page{
