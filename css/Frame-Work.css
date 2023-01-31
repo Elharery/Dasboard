@@ -288,6 +288,9 @@ a {
 .c-dbdbdb{
     color: #dbdbdb;
 }
+.pointer{
+    cursor: pointer;
+}
 .event{
     pointer-events: none;
 }

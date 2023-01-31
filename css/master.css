@@ -75,11 +75,44 @@ body
 }
 /* End Media */
 /* rule code */
-/* Start New */
-      .page{
-            min-height: 100vh;
-            background-color: #f1f5f9;
+/* profile */
+/* .img-profile:hover{
+      background-color: #eee;
+      padding: 7px;
+      transition: .3s;
+} */
+/* End profile */
+/* bell  */
+.rotate-bell:hover{
+      animation-play-state: paused;
+}
+.rotate-bell{
+      animation-name: rotate-bell;
+      animation-timing-function: linear;
+      animation-duration: .3s;
+      animation-iteration-count: 3;
+      animation-direction: alternate;
+}
+@keyframes rotate-bell{
+      0%{
+            transform: rotate(-15deg);
       }
+      25%{
+            transform: rotate(0deg);
+      }
+      50%{
+            transform: rotate(15deg);
+      }
+      100%{
+            transform: rotate(0deg);
+      }
+}
+/* End bell  */
+/* Start New */
+.page{
+      min-height: 100vh;
+      background-color: #f1f5f9;
+}
 /* End New */
 /* Start side */
 .sidebar{
@@ -689,6 +722,7 @@ position: absolute;
       -o-appearance: none;
 }
 .toggle-switch{
+      /* left: 5%; */
       background-color: #ccc;
       width: 78px;
       height: 32px;
@@ -936,6 +970,109 @@ input[value="o@mn.sa"]{
       color: #fff;
 } */
 /* boxes */ 
+/* start wid 6 */
+.backub-manager .servers input{
+      appearance: none;
+      -webkit-appearance: none;
+}
+.backub-manager .servers {
+      border-top: 1px solid #eee;
+      /* padding-top: 20px; */
+      gap: 10px;
+}
+@media (max-width: 767px){
+      .backub-manager .servers {
+            flex-wrap: wrap;
+      }
+}
+.backub-manager .servers .server{
+      border: 2px solid #eee;
+      position: relative;
+}
+.backub-manager .servers .server label{
+      cursor: pointer;
+}
+.backub-manager .servers input[type="radio"]:checked + .server{
+      border: 2px solid var(--blue-color);
+      color: var(--blue-color);
+}
+/* end */
+/* Start Profile */
+@media (max-width: 767px){
+      .profile-page > .overview{
+      flex-direction: column;
+      }
+}
+.profile-page .avatar-box{
+      width: 300px;
+      /* border-right: 1px solid #eee; */
+}
+@media (min-width: 768px){
+      .profile-page .avatar-box{
+            border-right: 1px solid #eee;
+      }
+}
+.profile-page .avatar-box > img{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+}
+.profile-page .avatar-box  .level{
+      height: 6px;
+      overflow: hidden;
+      margin: auto;
+      width: 70%;
+      background-color: #eee;
+}
+.profile-page .avatar-box  .level span{
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 6px;
+      background-color: var(--blue-color);
+}
+.profile-page .info-box .box{
+      border-bottom: 1px solid #Eee;
+      flex-wrap: wrap;
+      transition: 0.3s;
+}
+.profile-page .info-box .box:hover{
+      background-color: #f9f9f9;
+}
+.profile-page .info-box .box > div{
+      padding: 10px 0 0 ;
+      min-width: 250px;
+
+}
+.profile-page .info-box h4{
+      font-weight: normal;
+}
+.profile-page .disable  .toggle-switch::before{
+      content:"\f00c";
+      color: var(--blue-color);
+}
+
+.profile-page .disable  .toggle-switch{
+      background-color: #ccc;
+
+}
+.profile-page .disable  .toggle-switch::before{
+      left: 60%;
+}
+.profile-page .disable  .toggle-switch{
+      background-color: var(--blue-color);
+} 
+.profile-page .disable .toggle-checkbox:checked + .toggle-switch{
+      background-color: #eee;
+}
+.profile-page .disable  .toggle-checkbox:checked + .toggle-switch::before{
+      content:"\f00d";
+      color: #ccc;
+      left: 5%;
+}
+
+/* End Profile */
                                                             /* Media  */
 .content{
       overflow: hidden;
