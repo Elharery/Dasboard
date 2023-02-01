@@ -1080,7 +1080,61 @@ input[value="o@mn.sa"]{
       color: #ccc;
       left: 5%;
 }
-
+@media (max-width: 767px){
+      /* .under .skills{
+            width: 100%;
+      }
+      .under .activity{
+            width: 100%;
+      } */
+      .under {
+            flex-direction: column;
+      }
+}
+.skills div{
+      width: 200px;
+}
+.skills span.dont-have{
+background-color: var(--red-color);
+}
+.skills span.have{
+background-color: var(--blue-color);
+}
+.skills span{
+      background-color: #eee;
+      border-radius: 6px;
+      padding: 5px;
+}
+.skills > div:not(:last-child){
+      border-bottom: 2px solid #Eee;
+}
+.activity > div:not(:last-child){
+      border-bottom: 2px solid #Eee;
+}
+.activity > div:not(:first-of-type){
+      margin-top: 10px;
+}
+.activity > div{
+      padding: 15px;
+}
+.activity > div img{
+      margin-right: 20px;
+}
+@media (max-width: 767px){
+      .activity > div{
+            flex-direction: column;
+            text-align: center;
+      }
+      .activity > div div.box{
+            flex-direction: column;
+      }
+      .activity div img,.activity  .landing{
+            padding-bottom: 25px;
+      }
+      .activity  div img{
+            margin-right: 0;
+      }
+}
 /* End Profile */
                                                             /* Media  */
 .content{
