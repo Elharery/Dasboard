@@ -46,6 +46,12 @@ ul {
 .j-cont{
     justify-content: space-between;
 }
+.j-center{
+    justify-content: center;
+}
+.j-end{
+    justify-content: end;
+}
 .center-align{
     display: flex;
     align-items: center;
@@ -146,11 +152,23 @@ padding-left: 15px;
 .m-20{
     margin-top: 20px;
 }
+.ml--5{
+    margin-left: -5px;
+}
+.ml-5{
+    margin-left: 5px;
+}
 .ml-10{
     margin-left: 10px;
 }
+.ml--10{
+    margin-left: -10px;
+}
 .ml-15{
     margin-left: 15px;
+}
+.mr-5{
+    margin-right: 5px;
 }
 .mr-10{
     margin-right: 10px;

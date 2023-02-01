@@ -1136,6 +1136,230 @@ background-color: var(--blue-color);
       }
 }
 /* End Profile */
+/* Start Projects */
+.project-page{
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px){
+      .project-page .project .start{
+            width: 115px;
+            line-height: 1.5;
+      }
+      .project-page{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            margin-right: 10px;
+      }
+}
+.project-page .project > span{
+      right: 10px;
+      top: 10px;
+}
+.project-page .project > div{
+      padding-bottom: 20px;
+}
+.project-page .project .imgs{
+      border-bottom: 1px solid #Eee;
+      perspective: 200px;
+}
+.project-page .project .imgs img{
+      width: 40px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      transition: 0.3s;
+      cursor: pointer;
+}
+.project-page .project .imgs img:hover{
+            transform: translateZ(3px);
+            /* transform: rotate(20deg); */
+}
+.project-page .project .imgs img:not(:first-of-type){
+      margin-left: -20px;
+}
+.project-page .project .spans{
+      border-bottom: 1px solid #Eee;
+}
+.project-page .project .spans span{
+      width: fit-content;
+}
+@media (max-width: 767px){
+      .project-page .project .spans{
+            flex-direction: column;
+      }
+}
+.project-page .project .spans > span{
+      padding: 5px;
+}
+/* .project-page .project .rate,.project-page .project .rate-2{ */
+      .project-page .project .rate ,
+      .project-page .project .rate-2,
+      .project-page .project .rate-3,
+      .project-page .project .rate-4,
+      .project-page .project .rate-5,
+      .project-page .project .rate-5,
+      .project-page .project .rate-6,
+      .project-page .project .rate-7,
+      .project-page .project .rate-8,
+      .project-page .project .rate-9{
+      position: relative;
+      background-color: #eee;
+      width: 40%;
+      height: 10px;
+      border-radius: 6px;
+}
+@media (max-width: 767px){
+      .project-page .project .rateing{
+            flex-direction: column;
+            margin-top: 15px;
+            text-align: center;
+      }
+      .project-page .project .rate ,
+      .project-page .project .rate-2 ,
+      .project-page .project .rate-3 ,
+      .project-page .project .rate-4 ,
+      .project-page .project .rate-5 ,
+      .project-page .project .rate-5 ,
+      .project-page .project .rate-6 ,
+      .project-page .project .rate-7 ,
+      .project-page .project .rate-8 ,
+      .project-page .project .rate-9 {
+            width: 100%;
+      }
+      .project-page .project .rate .prog{
+            width: 65%;
+      } 
+      .project-page .project .rateing .right{
+            padding-top: 10px;
+      }
+}
+.project-page .project .rate > div{
+      background-color: var(--red-color);
+      width: 60%;
+}
+.project-page .project .rate > div,
+.project-page .project .rate-2 > div,
+.project-page .project .rate-3 > div,
+.project-page .project .rate-4 > div,
+.project-page .project .rate-5 > div,
+.project-page .project .rate-5 > div,
+.project-page .project .rate-6 > div,
+.project-page .project .rate-7 > div,
+.project-page .project .rate-8 > div,
+.project-page .project .rate-9 > div{
+      position: absolute;
+      height: 10px;
+      border-radius: 6px;
+}
+.project-page .project .rateing .right > span{
+      color: gray;
+}
+.project-page .project .rate-2 > div,
+.project-page .project .rate-4 > div,
+.project-page .project .rate-5 > div,
+.project-page .project .rate-7 > div,
+.project-page .project .rate-8 > div,
+.project-page .project .rate-9 > div{
+      background-color: var(--green-color);
+}
+.project-page .project .rate-2 > div{
+      width: 80%;
+}
+.project-page .project .rate-3 > div{
+      background-color: var(--blue-color);
+      width: 100%
+}
+.project-page .project .rate-4 > div{
+      width: 60%;
+}
+.project-page .project .rate-5 > div{
+      width: 60%;
+}
+.project-page .project .rate-6 > div{
+      background-color: var(--red-color);
+      width: 40%;
+}
+.project-page .project .rate-7 > div{
+      width: 50%;
+}
+/* End Projects */
+/* Start Courses */
+.courses-page{
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width:767px){
+      .courses-page{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            margin-right: 10px;
+      }
+      
+}
+.courses-page img.img-courses{
+      /* position: relative; */
+      max-width: 100%;
+}
+.courses-page img.img-pro{
+      position: absolute;
+      border-radius: 50%;
+      width: 50px;
+      left: 20px;
+      top: 20px;
+      border: 2px solid #eee;
+}
+.courses .box p{
+      line-height: 1.5;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 20px;
+}
+.courses .foot > span{
+      transform: translateX(-50px);
+      left: 48%;
+      top: -37px;
+}
+/* End Courses */
+/* start friend */
+.friend-page{
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width:767px){
+      .friend-page{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            margin-right: 10px;
+      }
+      
+}
+.friend .contact{
+      position: absolute;
+      left: 10px;
+      top: 5px;
+}
+.friend .contact i{
+      background-color: #eee;
+      padding: 7px;
+      cursor: pointer;
+      transition: 0.3s;
+}
+.friend .contact i:hover{
+      background-color: #0075ff;
+      color: #fff;
+}
+.friend .state img{
+      width: 50%;
+      border-radius: 50%;
+}
+.friend .state p{
+      padding-bottom: 15px;
+            border-bottom: 2px solid #eee;
+}
+.friend .opinions div{
+      padding-bottom: 10px;
+}
+.friend .landing{
+      border-bottom: 2px solid #eee;
+}
+.friend  span.vip{
+      font-size: 40px;
+      color: #ffa50045;
+}
+/* End friend */
                                                             /* Media  */
 .content{
       overflow: hidden;
