@@ -1325,6 +1325,17 @@ background-color: var(--blue-color);
             margin-right: 10px;
       }
       
+      .friend .foot .date{
+            position: relative;
+            left: -18px;
+      }
+      .friend .foot .button > a{
+            padding: 4px 3px ;
+      }
+      /* .friend .foot .button {
+            position: relative;
+            left: 10px;
+      } */
 }
 .friend .contact{
       position: absolute;
