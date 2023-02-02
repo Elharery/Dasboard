@@ -82,6 +82,30 @@ body
       transition: .3s;
 } */
 /* End profile */
+@media (max-width: 767px){
+
+            aside a{
+                  position: relative;
+                  left: -8px;
+            }
+            aside h3{
+                  position: relative;
+                  left: -8px;
+            }
+            aside li > a > i{
+                  position: relative;
+                  right: -5px;
+            }
+            aside ul > li{
+                  width: 50px;
+            }
+}
+aside{
+      position: fixed;
+}
+aside li{
+      width: 220px;
+}
 /* bell  */
 .rotate-bell:hover{
       animation-play-state: paused;
