@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Dashboard</title>
+    <title>Files</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Open+Sans:
         ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" re>
 </head>
-
+<!-- <div class="in-progress">
+    <div class="wait">
+        <i class="fa-solid fa-gear"></i>
+        <h2 class="m-0">Under Construction</h2>
+    </div>
+</div> -->
 <body>
     <div class="page d-flex bg-page">
         <div class="sidebar bg-fff p-20 p-relative ">
@@ -96,12 +101,69 @@
                 </div>
             </div>
             <h1 class="p-relative">File</h1>
-            <div class="in-progress">
-                <div class="wait">
-                    <i class="fa-solid fa-gear"></i>
-                    <h2 class="m-0">Under Construction</h2>
+                <div class="file-page d-flex gap ">
+                    <div class="upload-page bg-fff p-10 ml-10 rad-10 ">
+                        <h2 class="txt-tr">Files Statistics</h2>
+                        <div class="d-flex align-center upload rad-10 j-cont align-center">
+                            <!-- <div class="i"> -->
+                                <i class="fa-regular fa-file-pdf fa-lg blue align-center   icon "></i>
+                            <!-- </div> -->
+                                <div class="d-flex f-col text">
+                                    <span class="fs-13">PDF Files</span>
+                                    <span class="fs-13 color-grey">130</span>
+                                </div>
+                                <span class="fs-14 color-grey">6.5GB</span>
+                        </div>
+                        <div class="d-flex align-center upload rad-10 j-cont align-center">
+                            <!-- <div class=""> -->
+                                <i class="fa-regular fa-images fa-lg image  align-center  icon"></i>
+                            <!-- </div> -->
+                                <div class="d-flex f-col text">
+                                    <span class="fs-13">Images</span>
+                                    <span class="fs-13 color-grey">155 file</span>
+                                </div>
+                                <span class="fs-14 color-grey">3.5GB</span>
+                        </div>
+                        <div class="d-flex align-center upload rad-10 j-cont align-center">
+                            <!-- <div class=""> -->
+                                <i class="fa-regular fa-file-word fa-lg word icon"></i>
+                            <!-- </div> -->
+                                <div class="d-flex f-col text">
+                                    <span class="fs-13">Word Files</span>
+                                    <span class="fs-13 color-grey">110 file</span>
+                                </div>
+                                <span class="fs-14 color-grey">2.2GB</span>
+                        </div>
+                        <div class="d-flex align-center upload rad-10 j-cont align-center">
+                            <!-- <div class=""> -->
+                                <i class="fa-solid fa-file-csv fa-lg align-center csv icon"></i>
+                            <!-- </div> -->
+                                <div class="d-flex f-col text">
+                                    <span class="fs-13">CSV Files</span>
+                                    <span class="fs-13 color-grey">99 files</span>
+                                </div>
+                                <span class="fs-14 color-grey">2.9GB</span>
+                        </div>
+                        <a href="" class="ass">
+                                <i class="fa-solid fa-angles-up ani fs-14 p-relative"></i>
+                            upload
+                        </a>
+                    </div>
+                    <div class="files d-grid">
+                        <div class="file bg-fff rad-10 p-10 p-relative">
+                            <i class="fa-solid fa-download color-grey p-abs left top"></i>
+                            <div class="img d-flex f-col align-center j-center pt-25">
+                                <img src="imgs/pdf.svg" alt="">
+                                <h4 class="fs-14">my-file.pdf</h4>
+                            </div>
+                                <span class="color-grey fs-13 hi d-i-b ">Elharery</span>
+                            <div class="foot d-flex align-center j-cont  pt-10 border-t2">
+                                <span class="color-grey fs-13">16/5/2021</span>
+                                <span class="color-grey fs-13">12.5MB</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 </body>
