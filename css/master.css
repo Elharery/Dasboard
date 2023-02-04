@@ -1402,7 +1402,7 @@ background-color: var(--blue-color);
 /* End friend */
 /* start files */
 .file-page .files{
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       height: 100%;
 }
 /* .file-page{
@@ -1500,6 +1500,68 @@ background-color: var(--blue-color);
       transform: rotate(15deg);
 }
 /* End files */
+/* Start plan */
+.plan-page{
+      grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+      margin: 0 10px;
+}
+@media (max-width: 767px){
+      .plan-page{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+}
+.plan-page .free{
+      display: flex;
+      flex-direction: column;
+      background: var(--green-color);
+      color: #fff;
+      padding: 10px;
+      /* width: 50%; */
+      /* width: calc(50% - 10px); */
+      margin: auto;
+      text-align: center;
+      outline: 3px solid var(--green-color);
+      border: 3px solid #Fff;
+}
+.plan-page .free  .state {
+      font-size: 20px;
+      padding-bottom: 10px;
+}
+.plan-page .free  .price{
+      font-size: 30px;
+      
+}
+.plan-page .free  .dollar{
+      transform: translate(-70px, 0px);
+
+}
+.plan-page .premium  .dollar{
+      transform: translate(-85px, 0px);
+
+}
+.plan-page .box  .opinions{
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+}
+.plan-page .box  div div{
+      border-bottom: none;
+      padding-bottom: 0;
+}
+/* @media (max-width: 767px){
+      .plan-page .box  div div{
+            margin-left: -15px;
+      }
+} */
+.plan-page .basic{
+      background-color: var(--blue-color);
+      outline: 3px solid var(--blue-color);
+
+}
+.plan-page .box .premium{
+      background-color: var(--orange-color);
+      outline: 3px solid var(--orange-color);
+}
+      /* End plan */
                                                             /* Media  */
 .content{
       overflow: hidden;

@@ -36,9 +36,15 @@ ul {
     list-style: none;
 }
 /* End ul */
+.hight{
+    height: 100%;
+}
 /* Start flex */
 .d-flex{
     display: flex;
+}
+.flex{
+    flex: 1;
 }
 .align-center{
     align-items: center;
